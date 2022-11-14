@@ -13,6 +13,28 @@ To run the code on the provided example data, use the optional demo flag for eac
 python 3.9.5, pandas 1.3.0, numpy 1.20.3<br>
 R 4.1.0 TBD
 
+## PR_scoring.py
+(time) C:\Users\glori\Documents\Persönliches\#PhD_local\code\reddit_bd_recovery>python PR_scoring.py
+Concatenated lemmas and identified PR term phrases in 49016 posts
+Now writing to C:/Users/glori/Documents/Persönliches/#PhD_local/code/reddit_bd_recovery/data/posts_bd_spacy_phrases.csv
+Number of posts x vocabulary size (49016, 56344)
+Vectorised posts to shape (49016, 56344)
+Created term vector with shape (1, 56344)
+Calculated cosine similarity between posts and term vector
+                 PR
+count  49016.000000
+mean       0.013310
+std        0.007902
+min        0.000000
+25%        0.007497
+50%        0.012101
+75%        0.017832
+max        0.071883
+48644 posts have non-zero PR score
+Finished scoring, writing to C:/Users/glori/Documents/Persönliches/#PhD_local/code/reddit_bd_recovery/data/posts_bd_PR_scored.csv
+
+
+### rest is not updated down here
 ## Subreddit topics
 -- probably don't need this because have subreddit_type column in posts_meta.csv
 #Download the file https://github.com/glorisonne/reddit_bd_mood_posting_mh/blob/main/data/subreddit_topics.csv and place it into the data folder.

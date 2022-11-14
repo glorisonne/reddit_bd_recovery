@@ -10,10 +10,8 @@ import config as c
 
 # read spacy output and concatenate texts to tokenised version
 def read_posts(posts_file_spacy):
-    if posts_file_spacy.endswith(".csv"):
-        posts = pd.read_csv(posts_file_spacy, keep_default_na=False, na_values=[])
-    else:
-        posts = pd.read_pickle(posts_file_spacy)
+    posts = pd.read_csv(posts_file_spacy, keep_default_na=False, na_values=[])
+
     # posts["lemma"].fillna("", inplace=True)
     # posts.lemma = posts.lemma.to_string()
     tokenised_posts = posts.groupby("post_id")["lemma"].apply(lambda x: " ".join(x)).reset_index(). \
@@ -21,10 +19,6 @@ def read_posts(posts_file_spacy):
     # lowercase all posts
     tokenised_posts["text"] = tokenised_posts.text.str.lower()
 
-    # test posts
-    # tokenised_posts = pd.DataFrame(data={'post_id': [1, 2, 3], 'text': ["Mental health awareness week today !", "Just a test",
-    #                                                                 "You will follow through ."]})
-    # print(tokenised_posts)
     return tokenised_posts
 
 # identify PR phrases in lemmatised posts
@@ -38,6 +32,12 @@ def identify_PR_phrases(tokenised_posts, PR_terms):
         # print(text)
         return text
     tokenised_posts["text_with_phrases"] = tokenised_posts.text.apply(lambda x: replace_phrases(x, PR_terms))
+    return tokenised_posts
+
+def process_spacy_output(posts_file, PR_terms_file, outfile):
+    tokenised_posts = identify_PR_phrases(read_posts(posts_file), PR_terms_file)
+    print("Concatenated lemmas and identified PR term phrases in %d posts\nNow writing to %s" % (len(tokenised_posts), outfile))
+    tokenised_posts.to_csv(outfile)
     return tokenised_posts
 
 def to_tfidf(series, vectorizer):
@@ -64,13 +64,10 @@ def to_tfidf(series, vectorizer):
 
     return vectors
 
-def score_posts(posts, terms_file, text_col):
+def score_posts(posts, terms_file):
     vectorizer = TfidfVectorizer(tokenizer=lambda x: x.split())
 
-    # test posts
-    # posts = pd.DataFrame(data={'post_id': [1, 2, 3], 'text': ["mental_health_awareness week today !", "today a test",
-    #                                                                 "you will follow_through ."]})
-    post_vectors = to_tfidf(posts[text_col], vectorizer)
+    post_vectors = to_tfidf(posts["text_with_phrases"], vectorizer)
     print("Vectorised posts to shape", post_vectors.shape)
 
     PR_terms = pd.read_csv(terms_file, usecols=["replacement"])
@@ -94,33 +91,18 @@ def score_posts(posts, terms_file, text_col):
     posts_PR_scored = pd.concat([posts, post_PR_scores_df], axis=1)
     return posts_PR_scored
 
-##### main ####
+if __name__ == '__main__':
+    posts_file = c.data_local + "posts_bd_spacy.csv"
+    PR_terms_file = c.data_local + "PR_terms.csv"
+    filename_posts_with_PR_phrases = c.data_local + "posts_bd_spacy_phrases.csv"
+    filename_posts_scored = c.data_local + "posts_bd_PR_scored.csv"
 
-posts_file = c.data_local + "posts_bd_spacy.csv"
+    # identify multiword phrases in lemmatised posts, write to filename_posts_with_PR_phrases
+    tokenised_posts = process_spacy_output(posts_file, PR_terms_file, filename_posts_with_PR_phrases)
 
-#posts_file = sys.argv[1]
-PR_terms_file = c.data_local + "PR_terms.csv"
+    # already concatenated spacy lemmas
+    # tokenised_posts = pd.read_csv(filename_posts_with_PR_phrases, keep_default_na=False, na_values=[])
 
-text_col = "text_with_phrases"
-process_spacy_output = True
-
-filename = posts_file.split(".")[0]
-
-# identify multiword phrases in lemmatised posts
-if process_spacy_output:
-    tokenised_posts = identify_PR_phrases(read_posts(posts_file), PR_terms_file)
-    print("Concatenated lemmas of %d posts" %len(tokenised_posts))
-    tokenised_posts_file = filename + "_phrases.pkl"
-    print("Writing posts to %s" %tokenised_posts_file)
-    tokenised_posts.to_pickle(tokenised_posts_file)
-
-# already concatenated spacy lemmas
-else:
-    if posts_file.endswith(".csv"):
-        tokenised_posts = pd.read_csv(posts_file, keep_default_na=False, na_values=[])
-    else:
-        tokenised_posts = pd.read_pickle(posts_file)
-
-posts_PR_scored = score_posts(tokenised_posts, PR_terms_file, text_col)
-print("Finished scoring, writing to %s" %(filename + "_PR_scored.csv"))
-posts_PR_scored.sort_values(by="PR", ascending=False).to_csv(filename + "_PR_scored.csv")
+    posts_PR_scored = score_posts(tokenised_posts, PR_terms_file)
+    print("Finished scoring, writing to %s" %(filename_posts_scored))
+    posts_PR_scored.sort_values(by="PR", ascending=False).to_csv(filename_posts_scored)
