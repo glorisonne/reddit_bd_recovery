@@ -1,7 +1,5 @@
 import pandas as pd
-import sys
 import re
-import os
 
 from sklearn.feature_extraction.text import TfidfVectorizer
 from sklearn.metrics.pairwise import cosine_similarity
@@ -96,6 +94,7 @@ if __name__ == '__main__':
     PR_terms_file = c.data_local + "PR_terms.csv"
     filename_posts_with_PR_phrases = c.data_local + "posts_bd_spacy_phrases.csv"
     filename_posts_scored = c.data_local + "posts_bd_PR_scored.csv"
+    posts_meta_file = c.data_local + "posts_bd.csv"
 
     # identify multiword phrases in lemmatised posts, write to filename_posts_with_PR_phrases
     tokenised_posts = process_spacy_output(posts_file, PR_terms_file, filename_posts_with_PR_phrases)
@@ -105,4 +104,12 @@ if __name__ == '__main__':
 
     posts_PR_scored = score_posts(tokenised_posts, PR_terms_file)
     print("Finished scoring, writing to %s" %(filename_posts_scored))
-    posts_PR_scored.sort_values(by="PR", ascending=False).to_csv(filename_posts_scored)
+
+    # add metadata to the scored posts
+    posts_meta = pd.read_csv(c.data_local + "posts_bd.csv", usecols=["id", "user_id", "subreddit_name", "text_wordcount"],
+                             keep_default_na=False, na_values=[])
+    posts_PR_scored = posts_PR_scored.merge(posts_meta, left_on="post_id", right_on="id", how="left")
+    posts_PR_scored.drop(labels=["id"], axis=1, inplace=True)
+
+    posts_PR_scored[["post_id", "user_id", "subreddit_name", "text_wordcount", "text", "text_with_phrases", "PR"]].\
+        sort_values(by="PR", ascending=False).to_csv(filename_posts_scored)
