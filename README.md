@@ -33,6 +33,16 @@ max        0.071883
 48644 posts have non-zero PR score
 Finished scoring, writing to C:/Users/glori/Documents/Persönliches/#PhD_local/code/reddit_bd_recovery/data/posts_bd_PR_scored.csv
 
+## python create_corpora.py reads posts_bd_PR_scored.csv, creates PR-BD_Corpus.csv PR-BD_Corpus.txt, Reference_Corpus.csv, Reference_Corpus.txt and one .txt file for each of the X users in the PR-BD Corpus in the directory PR-BD_Corpus 
+
+## Steps to calculate keyness via LancsBox (LL, LR, dispersion)
+
+	- Import PR-BD Reddit corpus in one-file-per-user-format (Persönliches\#PhD_local\data\personal-recovery\PR-BD_Reddit_corpus) into LancsBox
+	- Import reference corpus (\#PhD_local\data\personal-recovery\Not_PR.txt) as one file into LancsBox
+	- Keywords: based on lemma
+	- Export LL scores as: PR-BD_keywords_LL.txt, LR scores as PR-BD_keywords_LR.txt
+	- LL > 15.13, sort according to LogRatio, percent_dispersion (for users)
+
 
 ### rest is not updated down here
 ## Subreddit topics
