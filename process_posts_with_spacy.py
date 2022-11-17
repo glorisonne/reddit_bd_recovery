@@ -3,7 +3,7 @@
 import spacy
 import pandas as pd
 
-import sys
+import config as c
 
 def nlp_preprocess_posts(fname):
     posts = pd.read_csv(fname, usecols=["id", "text"])

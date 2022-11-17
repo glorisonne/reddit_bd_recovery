@@ -10,13 +10,11 @@ import config as c
 def read_posts(posts_file_spacy):
     posts = pd.read_csv(posts_file_spacy, keep_default_na=False, na_values=[])
 
-    # posts["lemma"].fillna("", inplace=True)
-    # posts.lemma = posts.lemma.to_string()
     tokenised_posts = posts.groupby("post_id")["lemma"].apply(lambda x: " ".join(x)).reset_index(). \
         rename(columns={"lemma": "text"})
     # lowercase all posts
     tokenised_posts["text"] = tokenised_posts.text.str.lower()
-
+    print("Concatenated lemmas from %s" %posts_file_spacy)
     return tokenised_posts
 
 # identify PR phrases in lemmatised posts
@@ -34,7 +32,7 @@ def identify_PR_phrases(tokenised_posts, PR_terms):
 
 def process_spacy_output(posts_file, PR_terms_file, outfile):
     tokenised_posts = identify_PR_phrases(read_posts(posts_file), PR_terms_file)
-    print("Concatenated lemmas and identified PR term phrases in %d posts\nNow writing to %s" % (len(tokenised_posts), outfile))
+    print("Identified PR term phrases in %d posts\nNow writing to %s" % (len(tokenised_posts), outfile))
     tokenised_posts.to_csv(outfile)
     return tokenised_posts
 
