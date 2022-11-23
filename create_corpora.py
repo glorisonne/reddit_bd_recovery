@@ -6,11 +6,14 @@ import config as c
 
 posts = pd.read_csv(c.data_local + "posts_bd_PR_scored.csv", keep_default_na=False, na_values=[])
 
+posts = posts[posts.text_wordcount > 93]
+posts.drop_duplicates(subset=["text", "user_id"], keep = "last", inplace=True)
+
 PR = posts[posts.PR > 0.025]
 print("PR-BD Corpus:\nPosts: %d\nWords: %d\nUsers: %d" %(len(PR), PR.text_wordcount.sum(), PR.user_id.nunique()))
 
 not_PR = posts[posts.PR < 0.013]
-print("Comparison Corpus:\nPosts: %d\nWords: %d\nUsers: %d" %(len(not_PR), not_PR.text_wordcount.sum(), not_PR.user_id.nunique()))
+print("Reference Corpus:\nPosts: %d\nWords: %d\nUsers: %d" %(len(not_PR), not_PR.text_wordcount.sum(), not_PR.user_id.nunique()))
 
 def write_corpora(PR, not_PR):
     # important! Need to remove corpus folder with individual files for user if re-creating the corpus,

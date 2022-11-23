@@ -61,6 +61,7 @@ Users: 8001
 python process_posts_with_spacy.py
 ```
 Running this command on a standard personal laptop may take up to two hours.
+ToDo: 5 hours including duplicates + posts with fewer than 94 words
 
 #### Input 
 posts_bd.csv
@@ -97,24 +98,47 @@ Four spelling mistakes in the original PR_terms.csv file were corrected:
 posts_bd_spacy_phrases.csv and posts_bd_PR_scored.csv
 
 #### Expected output
-```{verbatim} ToDo update
-Concatenated lemmas and identified PR term phrases in 49016 posts
+```{verbatim} ToDo remove paths
+Concatenated lemmas from C:/Users/glori/Documents/Persönliches/#PhD_local/code/reddit_bd_recovery/data/posts_bd_spacy.csv
+Identified PR term phrases in 48182 posts
 Now writing to C:/Users/glori/Documents/Persönliches/#PhD_local/code/reddit_bd_recovery/data/posts_bd_spacy_phrases.csv
-Number of posts x vocabulary size (49016, 56344)
-Vectorised posts to shape (49016, 56344)
-Created term vector with shape (1, 56344)
+Number of posts x vocabulary size (48182, 55901)
+Vectorised posts to shape (48182, 55901)
+Created term vector with shape (1, 55901)
 Calculated cosine similarity between posts and term vector
                  PR
-count  49016.000000
-mean       0.013310
-std        0.007902
+count  48182.000000
+mean       0.013320
+std        0.007923
 min        0.000000
-25%        0.007497
-50%        0.012101
-75%        0.017832
-max        0.071883
-48644 posts have non-zero PR score
+25%        0.007492
+50%        0.012092
+75%        0.017836
+max        0.072158
+47811 posts have non-zero PR score
 Finished scoring, writing to C:/Users/glori/Documents/Persönliches/#PhD_local/code/reddit_bd_recovery/data/posts_bd_PR_scored.csv
+
+# without removing shorter posts and duplicates first
+Concatenated lemmas from C:/Users/glori/Documents/Persönliches/#PhD_local/code/reddit_bd_recovery/data/posts_bd_spacy.csv
+Identified PR term phrases in 83216 posts
+Now writing to C:/Users/glori/Documents/Persönliches/#PhD_local/code/reddit_bd_recovery/data/posts_bd_spacy_phrases.csv
+Number of posts x vocabulary size (83216, 60262)
+Vectorised posts to shape (83216, 60262)
+Created term vector with shape (1, 60262)
+Calculated cosine similarity between posts and term vector
+                 PR
+count  83216.000000
+mean       0.010949
+std        0.008319
+min        0.000000
+25%        0.004573
+50%        0.009670
+75%        0.015782
+max        0.070854
+74786 posts have non-zero PR score
+Finished scoring, writing to C:/Users/glori/Documents/Persönliches/#PhD_local/code/reddit_bd_recovery/data/posts_bd_PR_scored.csv
+
+
 ```
 #### 4.3 Select posts in PR-BD Corpus and Reference Corpus based on PR score cutoffs
 ```bash
@@ -129,7 +153,34 @@ Corpus in the directory PR-BD_Corpus
 
 #### Expected output
 ```{verbatim}
-ToDo
+PR-BD Corpus:
+Posts: 4141
+Words: 1392856
+Users: 1878
+Reference Corpus:
+Posts: 26382
+Words: 5666579
+Users: 6223
+
+## after not removing shorter posts
+PR-BD Corpus:
+Posts: 5423
+Words: 1542190
+Users: 2284
+Reference Corpus:
+Posts: 53984
+Words: 6795480
+Users: 7579
+
+## removing shorter posts + duplicates only after PR scoring
+PR-BD Corpus:
+Posts: 4411
+Words: 1479959
+Users: 1962
+Reference Corpus:
+Posts: 25327
+Words: 5375209
+Users: 6099
 ```
 
 ToDo: here share the post ids in the PR-BD Corpus and Reference Corpus?
