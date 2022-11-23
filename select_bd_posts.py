@@ -34,8 +34,10 @@ posts = posts[posts.mentions_bd]
 print("Posts that mention BD:\nPosts: %d\nWords: %d\nUsers: %d" %(len(posts), posts.text_wordcount.sum(),
                                                                     posts.user_id.nunique()))
 
+posts.to_csv(c.data_local + "posts_bd.csv")
+
 # 3) Select posts with at least 94 words, duplicates (same text by same user) removed
-posts = posts[posts.text_wordcount > 93]
+# posts = posts[posts.text_wordcount > 93]
 
 # add post texts - read post_text csv in two batches as the file is very large and the code might therefore fail on
 # machines with less RAM
@@ -50,7 +52,7 @@ posts = posts.merge(posts_text, left_on="id", right_on="id")
 del(posts_text_0, posts_text_1, posts_text)
 
 # remove posts with same text by same user
-posts.drop_duplicates(subset=["text", "user_id"], keep = "last", inplace=True)
-print("Posts with at least 94 words, duplicates removed:\nPosts: %d\nWords: %d\nUsers: %d" %(len(posts), posts.text_wordcount.sum(),
-                                                                    posts.user_id.nunique()))
+# posts.drop_duplicates(subset=["text", "user_id"], keep = "last", inplace=True)
+# print("Posts with at least 94 words, duplicates removed:\nPosts: %d\nWords: %d\nUsers: %d" %(len(posts), posts.text_wordcount.sum(),
+#                                                                    posts.user_id.nunique()))
 posts.to_csv(c.data_local + "posts_bd.csv")
