@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import pandas as pd
 import re
 
@@ -14,6 +16,7 @@ def read_posts(posts_file_spacy):
         rename(columns={"lemma": "text"})
     # lowercase all posts
     tokenised_posts["text"] = tokenised_posts.text.str.lower()
+    tokenised_posts.rename(columns={"post_id": "id"}, inplace=True)
     print("Concatenated lemmas from %s" %posts_file_spacy)
     return tokenised_posts
 
@@ -37,26 +40,14 @@ def process_spacy_output(posts_file, PR_terms_file, outfile):
     return tokenised_posts
 
 def to_tfidf(series, vectorizer):
-    # print(df["lemma"])
-
     # default analyzer splits at space and only retains tokens of at least 2 characters
     # instead use nltk tweet tokenizer
 
     vectors = vectorizer.fit_transform(series)
     print("Number of posts x vocabulary size", vectors.shape)
-    # tuple (post_id, vocabulary_item_id) - score,
+    # tuple (id, vocabulary_item_id) - score,
     # sparse representation: only lists for each post the vocabulary items that appear (where score is > 0)
     # print(vectors)
-
-    # feature_names = vectorizer.get_feature_names()
-    # print("Vocabulary size: %d" %len(feature_names))
-
-    # dense matrices too large
-    # dense = vectors.todense()
-    # denselist = dense.tolist()
-    # df_tfidf = pd.DataFrame(denselist, columns=feature_names)
-    # print(df_tfidf)
-    # return df_tfidf
 
     return vectors
 
@@ -106,8 +97,7 @@ if __name__ == '__main__':
     # add metadata to the scored posts
     posts_meta = pd.read_csv(c.data_local + "posts_bd.csv", usecols=["id", "user_id", "subreddit_name", "text_wordcount"],
                              keep_default_na=False, na_values=[])
-    posts_PR_scored = posts_PR_scored.merge(posts_meta, left_on="post_id", right_on="id", how="left")
-    posts_PR_scored.drop(labels=["id"], axis=1, inplace=True)
+    posts_PR_scored = posts_PR_scored.merge(posts_meta, left_on="id", right_on="id", how="left")
 
-    posts_PR_scored[["post_id", "user_id", "subreddit_name", "text_wordcount", "text", "text_with_phrases", "PR"]].\
+    posts_PR_scored[["id", "user_id", "subreddit_name", "text_wordcount", "text", "text_with_phrases", "PR"]].\
         sort_values(by="PR", ascending=False).to_csv(filename_posts_scored)

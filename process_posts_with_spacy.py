@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 # tokenise + lemmatise posts with spacy
 
 import spacy

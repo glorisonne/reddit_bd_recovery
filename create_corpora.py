@@ -1,19 +1,32 @@
+# -*- coding: utf-8 -*-
+
 import pandas as pd
-import os
-import shutil
+import sys
 
 import config as c
 
-posts = pd.read_csv(c.data_local + "posts_bd_PR_scored.csv", keep_default_na=False, na_values=[])
+mode = sys.argv[1]
 
-posts = posts[posts.text_wordcount > 93]
-posts.drop_duplicates(subset=["text", "user_id"], keep = "last", inplace=True)
+if mode == "select":
+    posts = pd.read_csv(c.data_local + "posts_bd_PR_scored.csv", keep_default_na=False, na_values=[])
 
-PR = posts[posts.PR > 0.025]
-print("PR-BD Corpus:\nPosts: %d\nWords: %d\nUsers: %d" %(len(PR), PR.text_wordcount.sum(), PR.user_id.nunique()))
+    # 3) Select posts with at least 94 words, remove duplicates (same text by same user)
+    posts = posts[posts.text_wordcount > 93]
+    posts.drop_duplicates(subset=["text", "user_id"], keep = "last", inplace=True)
+    print("Posts with at least 94 words, duplicates removed:\nPosts: %d\nWords: %d\nUsers: %d" %(len(posts), posts.text_wordcount.sum(),
+                                                                       posts.user_id.nunique()))
 
-not_PR = posts[posts.PR < 0.013]
-print("Reference Corpus:\nPosts: %d\nWords: %d\nUsers: %d" %(len(not_PR), not_PR.text_wordcount.sum(), not_PR.user_id.nunique()))
+    # 4.1) Select posts for PR-BD corpus
+    PR = posts[posts.PR > 0.025]
+    print("PR-BD Corpus:\nPosts: %d\nWords: %d\nUsers: %d" %(len(PR), PR.text_wordcount.sum(), PR.user_id.nunique()))
+
+    # 4.2) Select posts for Reference corpus
+    not_PR = posts[posts.PR < 0.013]
+    print("Reference Corpus:\nPosts: %d\nWords: %d\nUsers: %d" %(len(not_PR), not_PR.text_wordcount.sum(), not_PR.user_id.nunique()))
+
+else:
+    PR = pd.read_csv(c.data_local + "PR-BD_Corpus.csv")
+    not_PR = pd.read_csv(c.data_local + "Reference_Corpus.csv")
 
 def write_corpora(PR, not_PR):
     # important! Need to remove corpus folder with individual files for user if re-creating the corpus,
@@ -23,7 +36,8 @@ def write_corpora(PR, not_PR):
     shutil.rmtree(PR_corpus_dir, ignore_errors=True)
     os.makedirs(PR_corpus_dir)
 
-    PR.to_csv(c.data_local + "PR-BD_Corpus.csv")
+    PR[['id', 'user_id', 'subreddit_name', 'text_wordcount', 'text', 'text_with_phrases', 'PR']].to_csv(
+        c.data_local + "PR-BD_Corpus.csv", index=False)
 
     # .txt file format for LancsBox - only the texts
     with open(c.data_local + "PR-BD_Corpus.txt", "w") as f:
@@ -35,8 +49,11 @@ def write_corpora(PR, not_PR):
         with open(PR_corpus_dir + "%s.txt" %user_id, "w") as f:
             f.write("\n".join(posts.text.tolist()))
 
-    not_PR.to_csv(c.data_local + "Reference_Corpus.csv")
+    not_PR[['id', 'user_id', 'subreddit_name', 'text_wordcount', 'text', 'text_with_phrases', 'PR']].to_csv(
+        c.data_local + "Reference_Corpus.csv", index=False)
 
     # .txt file format for LancsBox - only the texts
     with open(c.data_local + "Reference_Corpus.txt", "w") as f:
         f.write("\n".join(not_PR.text.tolist()))
+
+u.write_corpora(PR, not_PR)
