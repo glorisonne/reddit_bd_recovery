@@ -79,11 +79,11 @@ def score_posts(posts, terms_file):
     return posts_PR_scored
 
 if __name__ == '__main__':
-    posts_file = c.data_local + "posts_bd_spacy.csv"
-    PR_terms_file = c.data_local + "PR_terms.csv"
-    filename_posts_with_PR_phrases = c.data_local + "posts_bd_spacy_phrases.csv"
-    filename_posts_scored = c.data_local + "posts_bd_PR_scored.csv"
-    posts_meta_file = c.data_local + "posts_bd.csv"
+    posts_file = c.data + "posts_bd_spacy.csv"
+    PR_terms_file = c.data + "PR_terms.csv"
+    filename_posts_with_PR_phrases = c.data + "posts_bd_spacy_phrases.csv"
+    filename_posts_scored = c.data + "posts_bd_PR_scored.csv"
+    posts_meta_file = c.data + "posts_bd.csv"
 
     # identify multiword phrases in lemmatised posts, write to filename_posts_with_PR_phrases
     tokenised_posts = process_spacy_output(posts_file, PR_terms_file, filename_posts_with_PR_phrases)
@@ -94,10 +94,10 @@ if __name__ == '__main__':
     posts_PR_scored = score_posts(tokenised_posts, PR_terms_file)
     print("Finished scoring, writing to %s" %(filename_posts_scored))
 
-    # add metadata to the scored posts
-    posts_meta = pd.read_csv(c.data_local + "posts_bd.csv", usecols=["id", "user_id", "subreddit_name", "text_wordcount"],
-                             keep_default_na=False, na_values=[])
+    # add metadata to the scored posts and use the original text (rather than tokenised + lemmatised via spacy)
+    posts_PR_scored.drop(labels="text", axis=1, inplace=True)
+    posts_meta = pd.read_csv(c.data + "posts_bd.csv", usecols=["id", "user_id", "subreddit_name", "text_wordcount",
+                                                               "text"], keep_default_na=False, na_values=[])
     posts_PR_scored = posts_PR_scored.merge(posts_meta, left_on="id", right_on="id", how="left")
-
     posts_PR_scored[["id", "user_id", "subreddit_name", "text_wordcount", "text", "text_with_phrases", "PR"]].\
         sort_values(by="PR", ascending=False).to_csv(filename_posts_scored)
