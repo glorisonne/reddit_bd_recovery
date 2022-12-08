@@ -2,13 +2,16 @@
 
 import pandas as pd
 import sys
+import os
+import shutil
 
 import config as c
+from select_posts_via_ids import select_posts
 
 mode = sys.argv[1]
 
 if mode == "select":
-    posts = pd.read_csv(c.data_local + "posts_bd_PR_scored.csv", keep_default_na=False, na_values=[])
+    posts = pd.read_csv(c.data + "posts_bd_PR_scored.csv", keep_default_na=False, na_values=[])
 
     # 3) Select posts with at least 94 words, remove duplicates (same text by same user)
     posts = posts[posts.text_wordcount > 93]
@@ -24,23 +27,25 @@ if mode == "select":
     not_PR = posts[posts.PR < 0.013]
     print("Reference Corpus:\nPosts: %d\nWords: %d\nUsers: %d" %(len(not_PR), not_PR.text_wordcount.sum(), not_PR.user_id.nunique()))
 
-else:
-    PR = pd.read_csv(c.data_local + "PR-BD_Corpus.csv")
-    not_PR = pd.read_csv(c.data_local + "Reference_Corpus.csv")
+elif mode == "ids":
+    #select_posts("PR-BD_Corpus_post_ids.csv")
+    #select_posts("Reference_Corpus_post_ids.csv")
+    PR = pd.read_csv(c.data + "PR-BD_Corpus.csv")
+    not_PR = pd.read_csv(c.data + "Reference_Corpus.csv")
 
 def write_corpora(PR, not_PR):
     # important! Need to remove corpus folder with individual files for user if re-creating the corpus,
     # otherwise files of users that were in a previous corpus version but not in the current one remain in the folder
-    PR_corpus_dir = c.data_local + "/PR-BD_corpus/"
+    PR_corpus_dir = c.data + "/PR-BD_corpus/"
     # removes the directory if it exists
     shutil.rmtree(PR_corpus_dir, ignore_errors=True)
     os.makedirs(PR_corpus_dir)
 
     PR[['id', 'user_id', 'subreddit_name', 'text_wordcount', 'text', 'text_with_phrases', 'PR']].to_csv(
-        c.data_local + "PR-BD_Corpus.csv", index=False)
+        c.data + "PR-BD_Corpus.csv", index=False)
 
     # .txt file format for LancsBox - only the texts
-    with open(c.data_local + "PR-BD_Corpus.txt", "w") as f:
+    with open(c.data + "PR-BD_Corpus.txt", "w") as f:
         f.write("\n".join(PR.text.tolist()))
 
     # write one file per user to calculate dispersion in LancsBox
@@ -50,10 +55,10 @@ def write_corpora(PR, not_PR):
             f.write("\n".join(posts.text.tolist()))
 
     not_PR[['id', 'user_id', 'subreddit_name', 'text_wordcount', 'text', 'text_with_phrases', 'PR']].to_csv(
-        c.data_local + "Reference_Corpus.csv", index=False)
+        c.data + "Reference_Corpus.csv", index=False)
 
     # .txt file format for LancsBox - only the texts
-    with open(c.data_local + "Reference_Corpus.txt", "w") as f:
+    with open(c.data + "Reference_Corpus.txt", "w") as f:
         f.write("\n".join(not_PR.text.tolist()))
 
-u.write_corpora(PR, not_PR)
+write_corpora(PR, not_PR)

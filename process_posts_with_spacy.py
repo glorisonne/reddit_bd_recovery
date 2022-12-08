@@ -35,8 +35,8 @@ def nlp_preprocess_posts(fname):
     # post id is same for every token in post
     # token id starts with 0 for every post
     df.columns = headers
-    df.to_csv(c.data_local + "posts_bd_spacy.csv")
+    df.to_csv(c.data + "posts_bd_spacy.csv")
 
 if __name__ == '__main__':
-    posts_file = c.data_local + "posts_bd.csv"
+    posts_file = c.data + "posts_bd.csv"
     nlp_preprocess_posts(posts_file)

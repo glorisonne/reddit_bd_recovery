@@ -20,7 +20,7 @@ posts = pd.read_csv(c.data + "posts_meta.csv", usecols=["id", "user_id", "subred
 # the subreddit_type column was populated using case-insensitive matching
 # ToDo: mention subreddit_topics.csv shared for paper 3 and that it doesn't contain casing mistakes?
 # ToDo mention how much of a difference correcting this bug makes?
-bd_subreddits = pd.read_csv(c.data_local + "bipolar-subreddits.txt", header=None, names=["subreddit"]).squeeze(axis=0)
+bd_subreddits = pd.read_csv(c.data + "bipolar-subreddits.txt", header=None, names=["subreddit"]).squeeze(axis=0)
 
 posts = posts[posts.subreddit_name.isin(bd_subreddits.subreddit)] #posts = posts[posts.subreddit_type == "bd"]
 print("Posts in BD subreddits:\nPosts: %d\nWords: %d\nUsers: %d" %(len(posts), posts.text_wordcount.sum(),
@@ -46,4 +46,4 @@ posts = posts.merge(posts_text, left_on="id", right_on="id")
 # free up RAM again
 del(posts_text_0, posts_text_1, posts_text)
 
-posts.to_csv(c.data_local + "posts_bd.csv")
+posts.to_csv(c.data + "posts_bd.csv")

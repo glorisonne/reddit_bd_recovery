@@ -1,9 +1,13 @@
+# -*- coding: utf-8 -*-
+import pandas as pd
+
+import config as c
 # select key lemmas from LancsBox output
 
 # nead to read LancsBox output in as text files as they are not properly csv formatted (" not escaped)
 def read_lacsbox_file(fname):
     lines = []
-    with open(c.data_local + "%s" %fname) as f:
+    with open(c.data + "%s" %fname) as f:
         # skip firs two lines
         f.readline()
         f.readline()
@@ -36,6 +40,6 @@ key_lemmas = terms[(terms.LL > 15.13) & (terms.LR >= 1.0) & (terms.dispersion >=
 
 print("Selected %d key lemmas with LL > 15.13 & LR >= 1.0 & dispersion >= 5.0" %len(key_lemmas))
 
-terms.to_csv(c.data_local + "PR-BD_terms.csv")
+terms.to_csv(c.data + "PR-BD_terms.csv")
 
-key_lemmas.to_csv(c.data_local + "PR-BD_key_lemmas.csv")
+key_lemmas.to_csv(c.data + "PR-BD_key_lemmas.csv")

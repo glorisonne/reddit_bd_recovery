@@ -1,10 +1,10 @@
 [comment]: https://www.markdownguide.org/basic-syntax/
-# Code accompanying the paper "How do people with a bipolar disorder diagnosis talk about personal recovery in peer online support forums? A corpus framework analysis" 
+# Code accompanying the paper "How do people with a bipolar disorder diagnosis talk about personal recovery in peer online support forums? A corpus framework analysis using POETIC" 
 
 This repository contains the code to reproduce all results from the paper Jagfeld, G., Lobban, F., Humphreys, C.,
 Rayson, P. E., & Jones, S. H. (submitted for publication) 
 "How do people with a bipolar disorder diagnosis talk about personal recovery in peer online support forums? 
-A corpus framework analysis".
+A corpus framework analysis using POETIC".
 
 To obtain the data, please contact Glorianna Jagfeld <g.jagfeld@lancaster.ac.uk> or Professor Steven Jones
 <s.jones7@lancaster.ac.uk>.
@@ -26,6 +26,29 @@ pandas 1.2.4
 numpy 1.18.5
 spacy 3.1.0 with pretrained pipeline en_core_web_sm (3.0.0)
 R 4.1.0 ToDo
+```
+
+## Creating the PR-BD Corpus and Reference Corpus from post ids
+You can directly generate the PR-BD and Reference Corpus from the post ids to sidestep
+all steps of "Constructing the PR-BD Corpus and Reference Corpus".
+
+```bash
+python create_corpora.py ids
+```
+
+#### Input
+PR-BD_Corpus_post_ids.csv, Reference_Corpus_post_ids.csv (placed in post_ids/ folder)
+
+#### Output
+PR-BD_Corpus.csv, PR-BD_Corpus.txt, Reference_Corpus.csv, Reference_Corpus.txt and one .txt file for each of the 1982 users in the PR-BD Corpus in the
+directory PR-BD_Corpus
+
+#### Expected output
+```{verbatim}
+Read in ids of 4462 posts
+Selected 4462 posts from 4462 ids
+Read in ids of 25191 posts
+Selected 25191 posts from 25191 ids
 ```
 
 ## Constructing the PR-BD Corpus and Reference Corpus
@@ -81,7 +104,7 @@ posts_bd_spacy.csv
 python PR_scoring.py
 ```
 #### Input 
-posts_bd_spacy.csv, PR_terms.csv
+posts_bd_spacy.csv, PR_terms.csv, posts_bd.csv
 
 PR_terms.csv contains the list of 561 PR terms used to score the posts.
 The column replacement contains the PR terms joined by underscore for PR terms consisting
@@ -147,39 +170,6 @@ Words: 5337456
 Users: 6075
 ```
 
-## Select posts via post ids
-```bash
-python select_posts_via_ids.py post_id_file
-```
-#### Input
-posts_meta.csv, posts_texts.csv, name of a post id file in the post_id/ directory
-(e.g. PR-BD_Corpus_post_ids.csv); the filename must be in the format name_post_ids.csv
-
-#### Output
-data/name.csv that contains the posts for which the id was provided (meta-data + texts)
-ToDo list columns
-
-#### Expected output
-```{verbatim}
-for python select_posts_via_ids.py PR-BD_Corpus_post_ids.csv:
-Read in ids of 4462 posts
-Selected 4462 posts from 4462 ids
-```
-
-## Creating the PR-BD Corpus and Reference Corpus from post ids
-You can directly generate the PR-BD and Reference Corpus from the post ids in this step.
-
-```bash
-python create_corpora.py
-```
-
-#### Input
-PR-BD_Corpus.csv, Reference_Corpus.csv
-
-#### Output
-PR-BD_Corpus.txt, Reference_Corpus.txt and one .txt file for each of the 1982 users in the PR-BD Corpus in the
-directory PR-BD_Corpus
-
 ## Generate key lemmas 
 
 ### Calculate keyness via LancsBox (LL, LR, dispersion)
@@ -212,7 +202,28 @@ PR-BD_terms.csv, PR-BD_key_lemmas.csv
 
 #### Expected output
 ```{verbatim}
-ToDo
+Selected 130 key lemmas with LL > 15.13 & LR >= 1.0 & dispersion >= 5.0
+```
+
+## Select posts via post ids
+To create any subset of posts from the S-BiDD dataset via provided post ids, do the following:
+
+```bash
+python select_posts_via_ids.py post_id_file
+```
+#### Input
+posts_meta.csv, posts_texts.csv, name of a post id file in the post_id/ directory
+(e.g. PR-BD_Corpus_post_ids.csv); the filename must be in the format name_post_ids.csv
+
+#### Output
+data/name.csv that contains the posts for which the id was provided (meta-data + texts)
+ToDo list columns
+
+#### Expected output
+```{verbatim}
+for python select_posts_via_ids.py PR-BD_Corpus_post_ids.csv:
+Read in ids of 4462 posts
+Selected 4462 posts from 4462 ids
 ```
 
 ## References
