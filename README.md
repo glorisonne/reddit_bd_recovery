@@ -82,7 +82,7 @@ Users: 8968
 
 #### 3.1 Tokenise + lemmatise posts via spacy
 ```bash
-python process_posts_with_spacy.py
+python process_posts_with_spacy.py data/posts_bd.csv
 ```
 Running this command on a standard personal laptop may take up to five hours.
 Please note that in order to reproduce our results, you need to use the exact spacy version (3.1.0) and language
@@ -224,6 +224,16 @@ ToDo list columns
 for python select_posts_via_ids.py PR-BD_Corpus_post_ids.csv:
 Read in ids of 4462 posts
 Selected 4462 posts from 4462 ids
+```
+
+## *recover* corpus construction
+### Select posts via post ids
+```bash
+python select_posts_via_ids.py posts_contain_recover_post_ids.csv
+```
+### Tokenise + lemmatise posts via spacy
+```bash
+python process_posts_with_spacy.py data/posts_contain_recover.csv
 ```
 
 ## References

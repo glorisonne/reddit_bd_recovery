@@ -2,6 +2,7 @@
 
 # tokenise + lemmatise posts with spacy
 
+import sys
 import spacy
 import pandas as pd
 
@@ -38,5 +39,5 @@ def nlp_preprocess_posts(fname):
     df.to_csv(c.data + "posts_bd_spacy.csv")
 
 if __name__ == '__main__':
-    posts_file = c.data + "posts_bd.csv"
+    posts_file = sys.argv[1] # c.data + "posts_bd.csv"
     nlp_preprocess_posts(posts_file)
