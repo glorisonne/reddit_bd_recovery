@@ -25,7 +25,7 @@ def select_posts(post_ids_file):
     print("Selected %d posts from %d ids" %(len(posts), len(post_ids)))
 
     # remove "post_ids" from filename
-    posts.to_csv(c.data + "_".join(post_ids_file.split("_")[:-2])+ ".csv_test", index=False)
+    posts.to_csv(c.data + "_".join(post_ids_file.split("_")[:-2])+ ".csv", index=False)
 
 if __name__ == '__main__':
     post_ids_file = sys.argv[1]
