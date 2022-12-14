@@ -1,0 +1,131 @@
+﻿term,frequency,dispersion,frequency_ref,LL,LR,lemma_pos,is_PR_term,partial_matches
+our,1416,26.53885,2379,446.5274176,1.065296914,our_pron,no,"believe in ourselves, believe in yourself, brush ourselves off, brush yourself off, courage, educate ourselves, educate yourself, feel good about ourselves, feel good about yourself, find our own path, find our own recovery, find our own route, find our trigger, find your own path, find your own recovery, find your own route, find your trigger, forgive ourselves, forgive yourself, help ourselves, help yourself, journey of recovery, make it up to ourselves, make it up to yourself, neighbour, pick ourselves up, pick yourself up, recovery journey, resource, resourceful, sense of humour, stand on our own foot, stand on your own foot, validate ourselves, validate yourself"
+yourself,1450,26.437941,2062,642.796422,1.305839427,yourself_pron,no,"believe in yourself, brush yourself off, educate yourself, feel good about yourself, forgive yourself, help yourself, make it up to yourself, pick yourself up, validate yourself"
+future,289,9.283552,432,116.6837532,1.233868655,future_n,no,good future
+grow,358,11.654894,489,170.3836739,1.363955837,grow_v,no,"growth, growth process"
+step,341,9.737639,472,158.6065033,1.344816289,step_n,no,"pivotal step, step forward"
+struggle,334,11.049445,530,119.4886294,1.147686253,struggle_n,no,through struggle
+career,279,8.577195,267,218.2412892,1.87725745,career_n,no,
+teach,186,5.852674,205,122.3289659,1.673509061,teach_v,no,
+successful,199,6.962664,232,121.1968043,1.592476046,successful_adj,no,
+environment,168,5.348133,211,91.66200525,1.485047278,environment_n,no,
+raise,209,7.467205,264,113.0254666,1.476797484,raise_v,no,
+marriage,161,5.196771,205,85.98656373,1.465266644,marriage_n,no,
+schedule,224,6.659939,296,112.7079714,1.411730991,schedule_n,no,
+bear,155,5.297679,225,66.16756768,1.27617617,bear_v,no,
+choose,330,9.687185,491,134.4399094,1.240573423,choose_v,no,
+effort,178,6.710394,272,68.81627797,1.202100689,effort_n,no,
+baby,174,5.600404,275,62.77894208,1.153485341,baby_n,no,
+brother,207,6.256307,346,66.05020928,1.072689184,brother_n,no,
+encourage,155,5.499495,263,47.76686825,1.051037444,encourage_v,no,
+position,134,5.348133,229,40.60412258,1.040715362,position_n,no,
+childhood,147,5.196771,252,44.21484657,1.036224058,childhood_n,no,
+adult,165,6.508577,284,49.15243537,1.030405886,adult_n,no,
+deserve,207,6.760848,360,60.13667865,1.01546425,deserve_v,no,
+provide,210,6.407669,368,59.88123684,1.004514482,provide_v,no,
+educate,204,6.357215,142,217.6909586,2.336509685,educate_v,partial,"educate herself, educate himself, educate myself, educate ourselves, educate themself, educate themselves, educate yourself, self - educate, self educate, selfeducate"
+forgive,147,5.348133,118,138.1132214,2.130862346,forgive_v,partial,"forgive herself, forgive himself, forgive myself, forgive ourselves, forgive themself, forgive themselves, forgive yourself, forgiveness"
+maintain,239,7.669021,240,176.7391311,1.807806168,maintain_v,partial,maintain health
+forward,262,8.930373,370,117.6114079,1.315873308,forward_adv,partial,"move forward, push forward, step forward"
+quality,136,5.196771,185,65.18511972,1.369913256,quality_n,partial,quality of life
+seek,389,11.957619,658,120.7523362,1.055513227,seek_v,partial,seek help
+group,717,14.783047,882,403.7895871,1.51502538,group_n,partial,support group
+accept,733,18.264379,827,467.1733817,1.639756975,accept_v,yes,"accept, acceptance, process of acceptance, self - acceptance, self acceptance, selfacceptance"
+active,141,5.146317,137,108.3897988,1.85534881,active_adj,yes,"active, active process, proactive"
+activity,220,6.407669,160,226.1550767,2.273262709,activity_n,yes,"activity, meaningful activity, pyhsical activity, social activity"
+shame,159,5.247225,91,197.1232483,2.618916245,shame_n,yes,"ashame, shame"
+belief,177,5.045409,93,232.5122323,2.742279206,belief_n,yes,"belief, self - belief, self belief, selfbelief"
+boyfriend,469,10.74672,610,242.1564438,1.434609912,boyfriend_n,yes,boyfriend
+capable,158,5.701312,104,176.458994,2.417173595,capable_adj,yes,capable
+care,827,19.424823,944,518.7312395,1.622931676,care_n,yes,"care, care plan, carer, find way of care, self - care, self care, selfcare"
+challenge,168,6.004036,62,269.4835787,3.251957051,challenge_n,yes,challenge
+chance,369,11.806256,503,176.2329032,1.366893161,chance_n,yes,chance
+child,1243,21.442987,520,1869.540074,3.071073284,child_n,yes,"child, grandchild"
+choice,433,11.301715,403,349.4477223,1.917417561,choice_n,yes,choice
+close,412,14.833502,564,195.3433259,1.360780044,close_adj,yes,"close, disclose"
+college,715,17.558022,731,517.3868163,1.781903089,college_n,yes,college
+community,329,10.191726,365,214.4934597,1.664022147,community_n,yes,community
+confidence,153,5.903128,63,232.0859534,3.093936967,confidence_n,yes,"confidence, self - confidence, self confidence, selfconfidence"
+connect,136,5.297679,181,67.62855304,1.401448364,connect_v,yes,"connect, connectedness"
+skill,335,9.13219,135,513.980589,3.12503325,skill_n,yes,"cope skill, interpersonal skill, skill, social skill"
+cope,665,18.51665,523,636.9979576,2.160373626,cope_v,yes,"cope, cope skill, cope with"
+cure,147,5.247225,153,104.0553302,1.756116614,cure_v,yes,cure
+dad,574,13.269425,398,614.5105833,2.342113773,dad_n,yes,"dad, daddy"
+daughter,297,7.063572,102,492.9422927,3.355723051,daughter_n,yes,daughter
+deal,1141,29.515641,1900,367.2206134,1.078130347,deal_v,yes,"deal, deal with"
+decision,566,15.338042,457,528.8175332,2.122438722,decision_n,yes,"decision, share decision - make, share decision make, share decisionmake"
+degree,401,11.099899,327,371.093104,2.108143247,degree_n,yes,degree
+develop,363,9.989909,442,207.5760557,1.529753533,develop_v,yes,"develop, develop strategy"
+diet,320,7.568113,239,321.3378325,2.234893491,diet_n,yes,diet
+dream,376,8.476287,278,380.9735556,2.249479756,dream_n,yes,dream
+education,157,5.701312,70,227.9445285,2.979165616,education_n,yes,"education, self - education, self education, selfeducation"
+engage,155,5.095863,87,194.7858318,2.647008877,engage_v,yes,engage
+enjoy,345,10.595358,461,170.4171945,1.395660348,enjoy_v,yes,enjoy
+exercise,347,9.889001,216,404.6706472,2.497734828,exercise_n,yes,exercise
+exercise,218,7.618567,198,180.6899611,1.952658577,exercise_v,yes,exercise
+family,1988,38.496468,1854,1600.812997,1.914507434,family_n,yes,family
+father,435,10.847629,163,692.5695813,3.22997428,father_n,yes,father
+recover,180,6.256307,159,153.674846,1.992800324,recover_v,yes,"find her own recovery, find his own recovery, find my own recovery, find our own recovery, find their own recovery, find your own recovery, journey of recovery, own recovery, process of recovery, recover, recovery, recovery journey, recovery process"
+recovery,227,6.559031,111,312.0716932,2.845965156,recovery_n,yes,"find her own recovery, find his own recovery, find my own recovery, find our own recovery, find their own recovery, find your own recovery, journey of recovery, own recovery, process of recovery, recovery, recovery journey, recovery process"
+live,1614,35.469223,2191,776.3203067,1.372882033,live_v,yes,"find way of live, live, live experience, live through"
+friendship,190,6.357215,76,292.6451843,3.135762993,friendship_n,yes,friendship
+girlfriend,220,6.811302,260,131.412055,1.572823317,girlfriend_n,yes,girlfriend
+life,4732,60.696266,7692,1607.271158,1.112922267,life_n,yes,"go through life, life, lifestyle, lifestyle change, quality of life, rebuild life"
+goal,485,11.099899,190,755.0955828,3.165814737,goal_n,yes,"goal, goal - set, goal set, goalset"
+god,416,9.889001,504,239.6593287,1.53699081,god_n,yes,god
+graduate,228,7.063572,101,332.2466543,2.988512473,graduate_v,yes,graduate
+son,387,7.921292,133,642.1154131,3.3547359,son_n,yes,"grandson, interpersonal skill, personal, personally, personally meaningful, reason to get up, son"
+grateful,139,5.196771,78,174.7087469,2.647370132,grateful_adj,yes,"grateful, gratefulness"
+guilt,241,7.467205,98,368.0093117,3.11200786,guilt_n,yes,"guilt, guilty"
+guilty,147,5.398587,142,113.7638029,1.8637569,guilty_adj,yes,guilty
+healthy,811,20.080727,491,965.5965906,2.537809144,healthy_adj,yes,healthy
+helpful,434,13.370333,727,137.795766,1.069570669,helpful_adj,yes,helpful
+hobby,177,6.205853,70,274.2326662,3.152150834,hobby_n,yes,hobby
+sexual,184,5.80222,170,149.7001235,1.928001724,sexual_adj,yes,"homosexual, sexual, sexuality"
+hope,390,13.218971,639,130.1711444,1.101489524,hope_n,yes,"hope, hope - inspire, hope inspire, hopeful, hopeinspire"
+husband,649,13.218971,565,562.5422182,2.013799123,husband_n,yes,husband
+improve,318,9.081736,334,222.5565878,1.7430101,improve_v,yes,improve
+insight,140,5.247225,206,58.25974519,1.256614126,insight_n,yes,insight
+personal,441,13.773966,487,289.2870234,1.670688376,personal_adj,yes,"interpersonal skill, personal, personally, personally meaningful"
+involve,232,8.324924,319,109.1620806,1.354399055,involve_v,yes,"involve, involvement"
+job,1831,32.492432,2370,952.7569332,1.441575577,job_n,yes,job
+kid,1146,21.190716,699,1356.966687,2.527073857,kid_n,yes,kid
+learn,1400,29.414733,1321,1112.726491,1.897627173,learn_v,yes,learn
+lifestyle,265,7.214934,66,501.3427589,3.81928162,lifestyle_n,yes,"lifestyle, lifestyle change"
+manage,934,21.796165,1022,620.1620954,1.683930385,manage_v,yes,"manage, micro - manage, micro manage, micromanage, self - manage, self - management, self manage, self management, selfmanage, selfmanagement"
+marry,213,7.669021,131,250.6594298,2.51511769,marry_v,yes,marry
+member,307,10.141271,175,381.6812032,2.624716037,member_n,yes,member
+mom,845,18.314833,744,723.8700854,1.997479666,mom_n,yes,"mom, pivotal moment"
+money,565,15.287588,714,305.3370262,1.47615814,money_n,yes,money
+mother,609,15.792129,397,685.3747387,2.431134064,mother_n,yes,mother
+motivation,178,6.710394,247,82.43006413,1.341196087,motivation_n,yes,motivation
+offer,259,8.577195,298,160.678424,1.611470959,offer_v,yes,offer
+open,332,11.200807,449,160.7108188,1.378298403,open_adj,yes,"open, open up"
+opportunity,207,6.811302,74,337.1726369,3.297863675,opportunity_n,yes,opportunity
+parent,1275,25.025227,813,1459.815143,2.463001275,parent_n,yes,parent
+partner,572,12.865792,284,778.9872874,2.823955481,partner_n,yes,partner
+perspective,295,9.535822,247,266.0089506,2.070033782,perspective_n,yes,perspective
+positive,414,13.118063,544,210.24011,1.419855452,positive_adj,yes,"positive, positive change"
+possibility,166,6.458123,242,70.29948265,1.270007481,possibility_n,yes,possibility
+professional,191,6.760848,242,102.8016853,1.472397334,professional_adj,yes,professional
+progress,190,5.650858,124,213.6361663,2.429490166,progress_n,yes,progress
+pursue,140,5.196771,45,239.3765061,3.451256582,pursue_v,yes,pursue
+relationship,1777,33.198789,1694,1396.142329,1.882840739,relationship_n,yes,relationship
+resource,283,7.265389,128,407.5251172,2.958489432,resource_n,yes,"resource, resourceful"
+responsibility,284,8.678103,92,483.9336279,3.440015443,responsibility_n,yes,"responsibility, take responsibility"
+responsible,156,5.398587,101,176.510287,2.441025588,responsible_adj,yes,responsible
+risk,321,7.517659,553,95.41905737,1.029124835,risk_n,yes,"risk, take risk"
+routine,233,6.811302,112,323.6817001,2.870659481,routine_n,yes,routine
+stigma,293,8.728557,377,153.9181419,1.450167503,stigma_n,yes,"self - stigma, self stigma, selfstigma, stigma, stigmatise, stigmatize"
+share,499,14.93441,720,215.4104309,1.284873943,share_v,yes,"share, share decision - make, share decision make, share decisionmake"
+success,247,7.618567,203,226.8452253,2.096863101,success_n,yes,"social success, success"
+social,599,15.489405,593,450.5143433,1.828355025,social_adj,yes,"social, social activity, social circle, social event, social interaction, social role, social skill, social success, socialise, socialize"
+society,237,7.214934,119,320.5049729,2.8077538,society_n,yes,society
+stability,386,10.49445,301,372.6959439,2.172668185,stability_n,yes,stability
+strength,170,5.54995,81,237.4210169,2.883370295,strength_n,yes,strength
+study,181,6.205853,310,54.56038828,1.037553292,study_v,yes,study
+support,1238,26.286579,722,1514.527187,2.591771173,support_n,yes,"support, support group, supportive"
+support,464,14.833502,340,473.8619735,2.262420998,support_v,yes,"support, support group, supportive"
+supportive,421,13.269425,201,587.25049,2.88045454,supportive_adj,yes,supportive
+trauma,188,5.196771,160,166.7733246,2.046492276,trauma_n,yes,trauma
+wife,464,9.334006,322,496.3986831,2.340894883,wife_n,yes,wife
