@@ -28,8 +28,8 @@ if mode == "select":
     print("Reference Corpus:\nPosts: %d\nWords: %d\nUsers: %d" %(len(not_PR), not_PR.text_wordcount.sum(), not_PR.user_id.nunique()))
 
 elif mode == "ids":
-    #select_posts("PR-BD_Corpus_post_ids.csv")
-    #select_posts("Reference_Corpus_post_ids.csv")
+    select_posts("PR-BD_Corpus_post_ids.csv")
+    select_posts("Reference_Corpus_post_ids.csv")
     PR = pd.read_csv(c.data + "PR-BD_Corpus.csv")
     not_PR = pd.read_csv(c.data + "Reference_Corpus.csv")
 
