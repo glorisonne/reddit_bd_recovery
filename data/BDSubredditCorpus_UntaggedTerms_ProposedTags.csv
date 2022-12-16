@@ -1,0 +1,66 @@
+word,BD Subreddit Corpus frequency,Proposed POS tag,Proposed semantic domain,Comment
+Lamictal,13738,NP1,Z3/B3,proprietory drugs Z3/B3 generic drugs B3
+seroquel,7728,NP1,Z3/B3,
+hypomanic,7350,JJ,B2-/X1,"manic depressive -> B2-, manic ->  X5.2++ B2-/X1, depressive/depressed -> E4.1- B2-/X1; only first tag is selected in corpus; hypomanic does not have general exitement sense I think, only medical"
+hypomania,6790,NN1,B2-/X1,see hypomanic
+im,6033,VBM,Z8mf/A3+ Z8mf/Z5,"I'm - noisy spelling/tokenisation error - assign as clear double membership to lexicon entry of I (Z8mf) and am (A3+ Z5)? In practice, only Z8mf will be assigned then, which is probably reasonable as I'm more likely to search for personal pronouns than for verbs in present tense? POS tag: VBM because specifically for ""am""? Or preprocess text and replace ""im"" with ""I am"" in all cases?"
+pdoc,5603,NN1,B3/S2mf,psychiatrist
+latuda,4645,NP1,Z3/B3,
+Abilify,4500,NP1,Z3/B3,
+Wellbutrin,3876,NP1,Z3/B3,
+haha,3131,UH,E4.1+/X3.2 Z4,"same tags as ""laugh""/Interjection POS tag/ or Z4 discourse bin"
+bp2,2781,NN1,B2-/X1,bipolar disorder type 2
+lamotrigine,2724,NP1,B3,
+BPD,2528,NN!,B2-/X1,borderline personality disorder
+depakote,2387,NP1,Z3/B3,
+Adderall,2089,NP1,Z3/B3,
+Reddit,2046,NP,Z3c/Y2,use same tags as Facebook lexicon entry; not clear when to use NP and NP1 in claws?
+idk,1922,UH,X2.2- Z4,"I don't know - often used as interjection, sign of resignation/confusion (uh idk, dude, idk)"
+Ive,1662,,,"I've  - noisy spelling/tokenisation error - preprocess text and replace all instances of this with ""I've""?"
+100mg,1560,,,"tokenisation error - preprocess? - alternatively: NNU1, N3.5 (measurement: weight)"
+--,1552,., _NO_SEMTAG_,dash - tokenisation error?
+Lexapro,1510,NP1,Z3/B3,
+&lt;3,1497,,E2+,html code for heart (<3)
+200mg,1475,,,tokenisation error - preprocess?
+ocd,1402,NN1,B2-/X1,obsessive compulsive disorder
+Klonopin,1365,NP1,Z3/B3,
+subreddit,1280,NN1,Z3c/Y2,same as Reddit
+Effexor,1271,NP1,Z3/B3,
+app,1228,NN1,Y2,could also be appartment  - did not see any usage of this in corpus
+300mg,1206,,,tokenisation error - preprocess?
+Zyprexa,1134,NP1,Z3/B3,
+bp1,1122,NN1,B2-/X1,bipolar disorder type 1
+50mg,1105,,,tokenisation error - preprocess?
+Geodon,997,NP1,Z3/B3,
+DBT,976,,B3,dialectical behavioural therapy
+Vyvanse,974,NP1,Z3/B3,
+Trileptal,960,NP1,Z3/B3,
+150mg,956,,,tokenisation error - preprocess?
+25mg,940,,,tokenisation error - preprocess?
+**,937,., _NO_SEMTAG_,"idicates emphasis:, e.g. ** edit** or quotation marks"
+antipsychotic,926,NN1/JJ,B3,can be both noun (antipsychotic as the drug) and less frequently adjective (antipsychotig medication)
+unmedicated,899,JJ,B3-,"in analogy to ""untreated"" (only lexicon entry with B3-)"
+misdiagnosed,869,VVN,B3/A5.2-,"in analogy to misleading, misunderstanding, misinformation, misguided (alternative would be A5.3- but only mistake is tagged with this)"
+CBT,854,NN1,B3,cognitive behavioural therapy
+omg,806,UH,Z4,"oh my god - in analogy to ""gosh"""
+benzos,768,NP2,B3,
+topamax,744,NP1,Z3/B3,
+quetiapine,708,NP1,B3,
+Cymbalta,687,NP1,Z3/B3,
+//www.youtube.com/watch,685,NP,Z3c/Y2,"in analogy to only lexicon entry with ""www"": www.i2media.com.my/"
+Vraylar,676,NP1,Z3/B3,
+bf,674,NN1,S3.2/S2.2m,"boyfriend (bff is ""best friend"")"
+alot,669,RR,N5+,"a lot - in analogy to ""lots"" (alternatively: preprocess to ""a lot"")"
+risperidone,655,NP1,B3,
+Tbh,655,UH,Z4,"to be honest - in analogy to ""omg"""
+coworkers,652,, I3.1/S2mf,
+20mg,636,,,tokenisation error: 20 mg
+Risperdal,612,NP1,Z3/B3,
+Ambien,586,NP1,Z3/B3,
+y'all,579,,,tokenisation error: you all
+10mg,579,,,tokenisation error: preprocess?
+hypersexuality,557,NN1,B2-/X1,symptom of mania
+bpii,550,NN1,B2-/X1,bipolar disorder type 2
+wtf,542,UH,Z4,"what the fuck - in analogy to ""omg"", ""fucking"" as adjective"
+cuz,533,CS,Z5/A2.2,"same as 'cause, because"
+&amp;nbsp,510,., _NO_SEMTAG_,"non breaking space, do not assign?"
