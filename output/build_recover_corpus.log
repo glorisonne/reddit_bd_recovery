@@ -1,0 +1,220 @@
+Constructing *recover* corpus ...
+Step 1
+Read in ids of 61553 posts
+Selected 61553 posts from 61553 ids
+0 posts do not have a text
+After Step 1:
+All English S-BiDD dataset posts with at least one token that matches *recover*
+61553 posts by 9119 users in 4125 subreddits, 795911 sentences with 12786617 tokens
+241 unique terms that match *recover*
+                            term  frequency
+0                       recovery      36403
+1                        recover      15794
+2                     recovering      10587
+3                      recovered       7285
+4                       recovers        833
+5                     recoveries        268
+6                    recoverable        194
+7                  unrecoverable        124
+8                opiatesrecovery        101
+9            redditorsinrecovery         82
+10           dinosaursinrecovery         53
+11       recovery](suburladdress         45
+12             smartrecovery.org         42
+13                     recovery-         34
+14                 smartrecovery         29
+15                    edrecovery         27
+16                 irrecoverable         23
+17                 irrecoverably         11
+18                      recoverd         10
+19        recover](suburladdress          9
+20             soberrecovery.com          8
+21                   unrecovered          8
+22                     recoverer          7
+23             celebraterecovery          7
+24       opiatesrecoverychat.com          6
+25                opiaterecovery          6
+26      recovery.](suburladdress          6
+27                recoverability          6
+28                     recovery/          5
+29                      recover-          5
+30                   recoverying          5
+31                      recover+          5
+32            reditorsinrecovery          4
+33                    recoverers          4
+34                    recovery--          4
+35                 benzorecovery          4
+36                     recover--          4
+37                     recoverit          4
+38                   autorecover          3
+39  smartrecovery](suburladdress          3
+40                   bpdrecovery          3
+41                 moisturecover          3
+42                 soberrecovery          3
+Step 2
+Read in 98 recover content terms
+After Step 2:
+ After selecting only posts with at least one *recover* content term
+60716 posts by 9098 users in 4097 subreddits, 787893 sentences with 12668640 tokens
+150 unique terms that match *recover*
+                       term  frequency
+0                  recovery      36403
+1                   recover      15794
+2                recovering      10587
+3                 recovered       7285
+4                  recovers        833
+5                recoveries        268
+6               recoverable        194
+7             unrecoverable        124
+8                 recovery-         34
+9       redditorsinrecovery         31
+10            irrecoverable         23
+11  recovery](suburladdress         20
+12          opiatesrecovery         17
+13      dinosaursinrecovery         16
+14        smartrecovery.org         13
+15            irrecoverably         11
+16                 recoverd         10
+17               edrecovery          8
+18              unrecovered          8
+19                recoverer          7
+20           recoverability          6
+21              recoverying          5
+22                 recover-          5
+23        soberrecovery.com          5
+24                recovery/          5
+25                recover--          4
+26               recoverers          4
+27               recovery--          4
+28        celebraterecovery          4
+29            smartrecovery          3
+Plot image to output/posts_per_user_top30_contains_recover_content_term.png
+Step 3
+60716 posts by 9098 users in 4097 subreddits, 787893 sentences with 12668640 tokens
+150 unique terms that match *recover*
+                       term  frequency
+0                  recovery      36403
+1                   recover      15794
+2                recovering      10587
+3                 recovered       7285
+4                  recovers        833
+5                recoveries        268
+6               recoverable        194
+7             unrecoverable        124
+8                 recovery-         34
+9       redditorsinrecovery         31
+10            irrecoverable         23
+11  recovery](suburladdress         20
+12          opiatesrecovery         17
+13      dinosaursinrecovery         16
+14        smartrecovery.org         13
+15            irrecoverably         11
+16                 recoverd         10
+17               edrecovery          8
+18              unrecovered          8
+19                recoverer          7
+20           recoverability          6
+21              recoverying          5
+22                 recover-          5
+23        soberrecovery.com          5
+24                recovery/          5
+25                recover--          4
+26               recoverers          4
+27               recovery--          4
+28        celebraterecovery          4
+29            smartrecovery          3
+After Step 3
+*recover* corpus: after downsampling user with disproportionally many posts
+(Note that thecorpus statistics may slightly differ from supplementary Table 4 due to random sampling.
+57259 posts by 9098 users in 4088 subreddits, 755143 sentences with 12188899 tokens
+145 unique terms that match *recover*
+                       term  frequency
+0                  recovery      32427
+1                   recover      15462
+2                recovering      10392
+3                 recovered       7176
+4                  recovers        819
+5                recoveries        264
+6               recoverable        194
+7             unrecoverable        124
+8                 recovery-         34
+9       redditorsinrecovery         31
+10            irrecoverable         23
+11  recovery](suburladdress         19
+12          opiatesrecovery         17
+13        smartrecovery.org         13
+14            irrecoverably         11
+15                 recoverd         10
+16              unrecovered          8
+17               edrecovery          8
+18                recoverer          7
+19           recoverability          6
+20        soberrecovery.com          5
+21              recoverying          5
+22                recovery/          5
+23                 recover-          5
+24                recover--          4
+25        celebraterecovery          4
+26               recoverers          4
+27               recovery--          3
+28      dinosaursinrecovery          3
+After Step 3
+*recover* corpus as used in the paper reconstructed from the post ids
+57259 posts by 9098 users in 4087 subreddits, 755220 sentences with 12190378 tokens
+145 unique terms that match *recover*
+                       term  frequency
+0                  recovery      32431
+1                   recover      15460
+2                recovering      10389
+3                 recovered       7171
+4                  recovers        822
+5                recoveries        264
+6               recoverable        194
+7             unrecoverable        124
+8                 recovery-         34
+9       redditorsinrecovery         31
+10            irrecoverable         23
+11  recovery](suburladdress         19
+12          opiatesrecovery         17
+13        smartrecovery.org         13
+14            irrecoverably         11
+15                 recoverd         10
+16               edrecovery          8
+17              unrecovered          8
+18                recoverer          7
+19           recoverability          6
+20        soberrecovery.com          5
+21                recovery/          5
+22              recoverying          5
+23                 recover-          5
+24               recoverers          4
+25                recover--          4
+26        celebraterecovery          4
+27      dinosaursinrecovery          3
+28               recovery--          3
+Plot image to output/posts_per_user_top30_recover_corpus.png
+        subreddit_name  posts (n)_recover  posts (n)_total   % total
+0            AskReddit               5208          2931222  0.177673
+1              bipolar               2688           397139  0.676841
+2         stopdrinking               2639            80629  3.273016
+3        BipolarReddit               1293           139125  0.929380
+4                  BPD               1029            51091  2.014053
+5        relationships                964           172272  0.559580
+6      OpiatesRecovery                804             8813  9.122887
+7  raisedbynarcissists                778            70316  1.106434
+8           depression                654            73087  0.894824
+9              Fitness                583            50111  1.163417
+Select posts to code
+Posts from *recover* corpus for manual coding of *recover* instances
+332 posts by 302 users in 180 subreddits, 4738 sentences with 77163 tokens
+9 unique terms that match *recover*
+            term  frequency
+0       recovery        168
+1        recover         80
+2     recovering         61
+3      recovered         41
+4       recovers          6
+5    recoverable          6
+6  irrecoverable          5
+7     recoveries          5
+8  unrecoverable          5

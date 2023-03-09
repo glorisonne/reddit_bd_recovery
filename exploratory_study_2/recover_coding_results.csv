@@ -1,0 +1,378 @@
+id,subreddit,subreddit type,sentence_id,term,term_pos_in_sentence,meaning,MH_issue,duration
+11698673,Antipsychiatry,other,11698673_8,recover,2,clinical recovery,other,episode
+20744244,TalesFromTheFrontDesk,other,20744244_4,recover,21,clinical recovery,ptsd,episode
+16574142,bipolar,bd,16574142_2,recovery,6,clinical recovery,bd,episode
+17422684,AskReddit,other,17422684_2,recovered,17,clinical recovery,ed,episode
+4529268,Random_Acts_Of_Amazon,other,4529268_35,recover,6,clinical recovery,other,episode
+5345485,BipolarReddit,bd,5345485_3,recovery,8,clinical recovery,bd,episode
+10292410,bipolar,bd,10292410_5,recovery,7,clinical recovery,other,episode
+2645739,bipolar,bd,2645739_4,recover,11,clinical recovery,bd,episode
+13656893,bipolar,bd,13656893_7,recovery,9,clinical recovery,bd,episode
+9408776,BipolarReddit,bd,9408776_5,recover,3,clinical recovery,bd,episode
+11195479,raisedbynarcissists,mh,11195479_1,recovering,10,personal recovery,ptsd,long-term
+1597929,REDDITORSINRECOVERY,other,1597929_8,recovery,14,clinical recovery,add-other,long-term
+14577771,depression,mh,14577771_2,recovery,5,cannot distinguish,add-a,long-term
+14588383,2meirl4meirl,other,14588383_0,recovery,26,cannot distinguish,multiple,long-term
+5507991,AskReddit,other,5507991_2,recovery,4,personal recovery,add-other,long-term
+5507991,AskReddit,other,5507991_5,recovery,8,personal recovery,add-other,long-term
+6413302,stopdrinking,mh,6413302_1,Recovered,0,personal recovery,add-a,long-term
+16488467,confessions,other,16488467_11,recovery,9,personal recovery,add-s,long-term
+16488467,confessions,other,16488467_10,Recovery,0,personal recovery,add-s,long-term
+19940453,anime,other,19940453_2,recovery,10,personal recovery,other,long-term
+18074587,JUSTNOMIL,other,18074587_1,recoveries,10,clinical recovery,add-d,long-term
+4909005,stopdrinking,mh,4909005_10,recovery,4,clinical recovery,add-a,long-term
+5805172,stopdrinking,mh,5805172_2,recovery,4,clinical recovery,add-a,long-term
+5846742,Anger,other,5846742_19,recovery,28,clinical recovery,add-a,long-term
+7118050,loseit,other,7118050_11,recovering,1,clinical recovery,add-d,long-term
+7208514,AskReddit,other,7208514_0,recovery,4,clinical recovery,add-a,long-term
+7208514,AskReddit,other,7208514_7,recovery,10,clinical recovery,add-a,long-term
+10446953,stopdrinking,mh,10446953_2,recovery,6,clinical recovery,add-a,long-term
+11017651,fuckeatingdisorders,mh,11017651_0,Recovering,0,clinical recovery,ed,long-term
+11694181,childfree,other,11694181_0,recovering,5,clinical recovery,add-a,long-term
+13657337,AskReddit,other,13657337_0,Recovering,0,clinical recovery,add-a,long-term
+15761508,bipolar,bd,15761508_0,recovering,4,clinical recovery,add-a,long-term
+17691238,fatlogic,other,17691238_0,recovered,6,clinical recovery,ed,long-term
+20939275,BingeEatingDisorder,mh,20939275_9,recovery,4,clinical recovery,ed,long-term
+17014932,atheism,other,17014932_12,recovery,25,cannot distinguish,other,long-term
+15073311,Vent,other,15073311_1,recovery,8,cannot distinguish,ed,long-term
+696004,IAmA,other,696004_0,recovery,11,cannot distinguish,pd,long-term
+5678801,REDDITORSINRECOVERY,other,5678801_0,recovery,12,personal recovery,add-other,long-term
+12962361,socialskills,other,12962361_1,recovering,12,personal recovery,add-other,long-term
+2091692,BPD,mh,2091692_0,recovery,7,personal recovery,bpd,long-term
+7208525,DebateAChristian,other,7208525_38,recovery,16,personal recovery,mdd,long-term
+7330770,AskReddit,other,7330770_0,recovered,2,personal recovery,mdd,long-term
+15867692,JordanPeterson,other,15867692_6,recovery,2,personal recovery,bd,long-term
+18646953,bipolar2,bd,18646953_7,recovery,4,personal recovery,bd,long-term
+18913846,BipolarReddit,bd,18913846_0,Recovery,0,personal recovery,bd,long-term
+15820425,AskReddit,other,15820425_18,recover,8,life event,other,long-term
+17428432,relationships,other,17428432_9,recovering,7,other,multiple,long-term
+9025414,RandomKindness,other,9025414_0,recovery,15,clinical recovery,add-a,long-term
+4317348,alcoholism,mh,4317348_22,recovery,3,cannot distinguish,add-a,long-term
+17966524,Anxiety,mh,17966524_2,recover,7,cannot distinguish,ad,long-term
+14818806,penpalsover30,other,14818806_1,Recovering,0,clinical recovery,add-a,long-term
+1217660,AskReddit,other,1217660_4,recovering,3,cannot distinguish,add-d,long-term
+11324570,AskReddit,other,11324570_1,Recovering,0,clinical recovery,add-a,long-term
+18419818,proED,mh,18419818_11,recovering,5,clinical recovery,ed,long-term
+18419818,proED,mh,18419818_0,recovery,5,clinical recovery,ed,long-term
+16166221,Random_Acts_Of_Pizza,other,16166221_2,recover,7,clinical recovery,ed,long-term
+2550807,IAmA,other,2550807_5,recovered,10,cannot distinguish,other,long-term
+17539608,AlAnon,other,17539608_1,recovery,15,clinical recovery,add-a,long-term
+14272765,proED,mh,14272765_1,recovered,29,clinical recovery,ed,long-term
+14272765,proED,mh,14272765_2,recovered,15,clinical recovery,ed,long-term
+14272765,proED,mh,14272765_6,recovered,8,clinical recovery,ed,long-term
+14272765,proED,mh,14272765_6,recovered,12,clinical recovery,ed,long-term
+16166221,Random_Acts_Of_Pizza,other,16166221_0,Recovering,3,clinical recovery,ed,long-term
+16166221,Random_Acts_Of_Pizza,other,16166221_2,recovery,22,clinical recovery,ed,long-term
+14272765,proED,mh,14272765_0,recovery,4,clinical recovery,ed,long-term
+14272765,proED,mh,14272765_1,recovery,8,clinical recovery,ed,long-term
+16561064,raisedbynarcissists,mh,16561064_0,recovery,15,clinical recovery,other,long-term
+4975740,atheism,other,4975740_3,recover,7,personal recovery,add-a,long-term
+13978270,socialskills,other,13978270_9,recover,12,personal recovery,multiple,long-term
+5403170,BipolarReddit,bd,5403170_2,recover,16,clinical recovery,bd,long-term
+7644571,bipolar,bd,7644571_7,recovered,2,clinical recovery,other,long-term
+4282804,bipolar,bd,4282804_10,recovery,14,cannot distinguish,other,long-term
+13588789,bipolar,bd,13588789_2,recovered,9,personal recovery,bd,long-term
+10627052,bipolar,bd,10627052_2,recover,6,cannot distinguish,add-d,long-term
+21100038,bipolar,bd,21100038_4,recovering,8,clinical recovery,add-other,long-term
+5833236,BipolarReddit,bd,5833236_2,recover,19,clinical recovery,bd,long-term
+1605097,BipolarReddit,bd,1605097_0,recovery,18,clinical recovery,add-d,long-term
+7167393,AskReddit,other,7167393_0,recovering,4,cannot distinguish,add-d,other
+9811341,AskReddit,other,9811341_1,recovery,7,cannot distinguish,add-d,other
+10880411,selfharm,mh,10880411_1,recovery,6,cannot distinguish,other,other
+13215496,alcoholism,mh,13215496_1,recovered,1,cannot distinguish,add-a,other
+422069,reddit.com,other,422069_0,recovery,10,cannot distinguish,mdd,other
+4488411,bipolar,bd,4488411_27,recovery,9,cannot distinguish,other,other
+4954713,AskReddit,other,4954713_1,recovering,2,personal recovery,other,other
+6759972,bipolar,bd,6759972_2,recovery,10,personal recovery,bd,other
+17762111,dryalcoholics,other,17762111_6,recovery,18,clinical recovery,add-a,other
+17762111,dryalcoholics,other,17762111_5,recovery,1,clinical recovery,add-a,other
+15426036,OpiatesRecovery,other,15426036_13,recovery,9,clinical recovery,add-d,other
+5177413,amiugly,other,5177413_1,recovered,11,cannot distinguish,ed,other
+6762916,bipolar,bd,6762916_3,recovery,26,cannot distinguish,bd,other
+20739980,TeachReddit,other,20739980_13,Recovering,48,cannot distinguish,other,other
+20739980,TeachReddit,other,20739980_13,recovering,18,cannot distinguish,other,other
+17887696,depression,mh,17887696_14,recovery,3,clinical recovery,mdd,other
+15416195,politics,other,15416195_2,recovery,13,other,,
+9475550,BipolarReddit,bd,9475550_1,recovery,14,life event,,
+17581254,bipolar,bd,17581254_3,recover,39,life event,,
+11349114,PlantedTank,other,11349114_9,recover,19,life event,,
+16241028,politics,other,16241028_2,recover,22,life event,,
+20734186,personalfinance,other,20734186_11,recovering,6,life event,,
+18657069,LifeAfterNarcissism,other,18657069_0,recoverable,12,life event,,
+19508142,changemyview,other,19508142_6,recover,15,life event,,
+2767042,detroitlions,other,2767042_2,recovers,7,life event,,
+14376595,quotes,other,14376595_0,recover,19,physical health,,
+20121966,computers,other,20121966_0,recover,9,retrieve,,
+17738054,cats,other,17738054_1,recovered,1,animal/plant,,
+19237180,AskVet,other,19237180_118,recovers,43,animal/plant,,
+17241337,tifu,other,17241337_1,recovery,6,animal/plant,,
+20245383,JordanPeterson,other,20245383_8,recover,10,energy/substance,,
+13859286,apple,other,13859286_2,recovery,6,inanimate,,
+16893389,AskReddit,other,16893389_1,recoverable,21,inanimate,,
+10038561,medlabprofessionals,other,10038561_4,recover,16,inanimate,,
+12163302,AdviceAnimals,other,12163302_1,recovering,19,inanimate,,
+6850562,cscareerquestions,other,6850562_2,recovery,12,inanimate,,
+14542132,DestinyTheGame,other,14542132_5,recovery,8,inanimate,,
+14542132,DestinyTheGame,other,14542132_0,recovery,11,inanimate,,
+10999663,CFB,other,10999663_0,recovery,14,life event,,
+11473401,Overwatch,other,11473401_0,recovering,3,life event,,
+125589,gaming,other,125589_4,recovering,1,life event,,
+7706784,Advice,other,7706784_6,recovering,15,life event,,
+9651323,AMA,other,9651323_3,recovery,14,life event,,
+10214371,offmychest,other,10214371_3,recover,8,life event,,
+11092815,relationships,other,11092815_15,recovering,3,life event,,
+13410266,CPTSD,mh,13410266_8,recovery,10,life event,,
+13683102,pics,other,13683102_4,recover,2,life event,,
+14853591,sad,other,14853591_3,recover,19,life event,,
+18084037,abuse,other,18084037_19,recovery,15,life event,,
+20970301,videos,other,20970301_8,recover,17,life event,,
+5958616,PurplePillDebate,other,5958616_1,recovers,8,life event,,
+4279866,relationships,other,4279866_1,recoverable,15,life event,,
+3266522,bestof,other,3266522_1,recovery,3,other,,
+9746936,AskCulinary,other,9746936_8,unrecoverable,4,other,,
+2079862,AskReddit,other,2079862_0,recovering,6,physical health,,
+2369701,pics,other,2369701_5,recovery,3,physical health,,
+4871910,nfl,other,4871910_0,recovery,20,physical health,,
+4871910,nfl,other,4871910_7,recovering,12,physical health,,
+5564406,running,other,5564406_8,recovery,6,physical health,,
+5597802,Fitness,other,5597802_2,recovery,9,physical health,,
+5597802,Fitness,other,5597802_0,Recovery,0,physical health,,
+6246711,Advice,other,6246711_2,recovered,2,physical health,,
+6315350,kratom,other,6315350_12,recovery,27,physical health,,
+6945707,beyondthebump,other,6945707_4,recovery,4,physical health,,
+7121403,redsox,other,7121403_4,recovering,12,physical health,,
+8146142,phoenix,other,8146142_3,recovery,14,physical health,,
+8240520,Fitness,other,8240520_0,recovering,2,physical health,,
+8678305,ftm,other,8678305_0,recovery,4,physical health,,
+9118585,Random_Acts_Of_Amazon,other,9118585_0,Recovering,0,physical health,,
+9148479,pics,other,9148479_0,recovering,2,physical health,,
+9256132,xxfitness,other,9256132_2,recover,22,physical health,,
+10617941,AskReddit,other,10617941_25,recovering,16,physical health,,
+10995270,BabyBumps,other,10995270_3,recovery,33,physical health,,
+11529627,JUSTNOMIL,other,11529627_7,recovering,10,physical health,,
+11543996,keto,other,11543996_4,recovery,14,physical health,,
+11588773,CasualConversation,other,11588773_8,recover,41,physical health,,
+11961557,AskWomen,other,11961557_1,recovery,7,physical health,,
+12510436,loseit,other,12510436_1,recover,5,physical health,,
+14006493,ontario,other,14006493_5,recovery,18,physical health,,
+15167957,sports,other,15167957_13,recover,40,physical health,,
+16867246,Rapids,other,16867246_2,recovered,21,physical health,,
+17468500,BPD,mh,17468500_12,recovery,23,physical health,,
+17938706,childfree,other,17938706_0,recovery,18,physical health,,
+19376269,politics,other,19376269_3,recovery,20,physical health,,
+20551682,RestlessLegs,other,20551682_3,recovering,3,physical health,,
+21189917,hysterectomy,other,21189917_1,recovery,11,physical health,,
+3375453,WTF,other,3375453_1,recoveries,6,physical health,,
+11137313,PurplePillDebate,other,11137313_3,recoveries,13,physical health,,
+18615131,AskReddit,other,18615131_4,recovers,22,physical health,,
+3675061,hiphopheads,other,3675061_0,Recovery,21,proper noun,,
+3675061,hiphopheads,other,3675061_12,Recovery,5,proper noun,,
+14082641,Cleveland,other,14082641_0,recovery,5,proper noun,,
+9671587,AsianBeauty,other,9671587_1,Recovery,5,proper noun,,
+12989462,ShouldIbuythisgame,other,12989462_3,unrecoverable,18,retrieve,,
+5030215,devops,other,5030215_7,irrecoverable,21,retrieve,,
+5030215,devops,other,5030215_7,recoverable,19,retrieve,,
+13782152,motorcycles,other,13782152_25,recover,34,retrieve,,
+15310900,nonononoyes,other,15310900_0,recovered,9,retrieve,,
+17165481,VictoriaBC,other,17165481_0,recovery,13,retrieve,,
+20392351,geocaching,other,20392351_12,recover,7,retrieve,,
+4826229,DataHoarder,other,4826229_5,unrecoverable,17,retrieve,,
+17969562,AppleWhatShouldIBuy,other,17969562_20,irrecoverable,44,retrieve,,
+12842059,JordanPeterson,other,12842059_9,recover,9,life event,,
+3223669,AskReddit,other,3223669_12,recovered,19,life event,,
+20606713,getdisciplined,other,20606713_5,recovering,2,other,,
+4529268,Random_Acts_Of_Amazon,other,4529268_46,recover,6,clinical recovery,ad,long-term
+17747770,dryalcoholics,other,17747770_0,recovery,2,personal recovery,add-a,long-term
+11305488,raisedbynarcissists,mh,11305488_2,recovery,13,life event,,
+9123946,BPD,mh,9123946_11,recover,14,life event,,
+21184654,AskReddit,other,21184654_0,recover,8,life event,,
+4189225,Dualsport,other,4189225_5,recover,4,life event,,
+2618626,MLPLounge,other,2618626_13,recover,5,life event,,
+19863602,Assistance,other,19863602_7,recovering,4,life event,,
+8882685,textfriends,other,8882685_4,Recovering,0,life event,,
+5413965,PurplePillDebate,other,5413965_22,recover,17,life event,,
+4084208,nailbiting,other,4084208_3,recover,5,physical health,,
+1030148,fasting,other,1030148_4,recovered,7,physical health,,
+392517,DoesAnybodyElse,other,392517_10,recover,5,physical health,,
+15472441,medical,other,15472441_9,recover,6,physical health,,
+15472441,medical,other,15472441_4,recovered,7,physical health,,
+15290297,BabyBumps,other,15290297_42,Recovery,0,physical health,,
+13239296,migraine,other,13239296_0,Recovery,1,physical health,,
+7929046,personalfinance,other,7929046_5,recovering,12,physical health,,
+5387931,SkincareAddiction,other,5387931_28,recovery,14,physical health,,
+2240518,BabyBumps,other,2240518_92,recovery,22,physical health,,
+1639473,BabyBumps,other,1639473_99,recovery,29,physical health,,
+1639473,BabyBumps,other,1639473_105,recovery,4,physical health,,
+1049430,TwoXChromosomes,other,1049430_4,recovering,22,physical health,,
+10167198,guineapigs,other,10167198_8,recovery,18,animal/plant,,
+17312064,nosleep,other,17312064_31,recover,10,inanimate,,
+3843005,ADHD,mh,3843005_10,recover,14,retrieve,,
+19796533,ptsd,mh,19796533_3,recovered,13,retrieve,,
+13978270,socialskills,other,13978270_0,recover,2,retrieve,,
+11150673,ockytop,other,11150673_9,recover,7,retrieve,,
+2218101,Guildwars2,other,2218101_3,recovered,3,retrieve,,
+12323560,personalfinance,other,12323560_3,Recovery,6,proper noun,,
+10145862,talesfromthejob,other,10145862_43,Recovery,5,proper noun,,
+1599837,Denver,other,1599837_0,recover,5,physical health,,
+1921645,bipolar,bd,1921645_5,recovery,7,life event,,
+9159962,bipolar,bd,9159962_20,recover,7,physical health,,
+9408776,BipolarReddit,bd,9408776_12,recover,19,physical health,,
+12483337,bipolar,bd,12483337_2,recovered,4,physical health,,
+16327613,bipolar,bd,16327613_15,recovered,11,physical health,,
+10165417,bipolar,bd,10165417_7,recovery,18,clinical recovery,bd,episode
+10977262,AskUK,other,10977262_8,recovering,10,cannot distinguish,other,episode
+12399597,AskReddit,other,12399597_1,recovered,11,clinical recovery,other,episode
+11033134,learnprogramming,other,11033134_31,recovery,6,clinical recovery,mdd,episode
+11747316,bipolar,bd,11747316_6,recover,33,clinical recovery,bd,episode
+9738817,bipolar,bd,9738817_5,recovering,6,clinical recovery,bd,episode
+1613727,BipolarReddit,bd,1613727_12,recovered,17,clinical recovery,bd,episode
+7071612,BipolarReddit,bd,7071612_4,recovered,3,cannot distinguish,bd,episode
+8468324,bipolar,bd,8468324_18,recovery,6,clinical recovery,bd,episode
+7126326,bipolar,bd,7126326_0,recover,27,clinical recovery,bd,episode
+15650813,bipolar,bd,15650813_3,recovery,21,clinical recovery,bd,episode
+8108468,BipolarReddit,bd,8108468_7,recovery,3,clinical recovery,bd,long-term
+7932710,GetMotivated,other,7932710_0,recovering,2,cannot distinguish,other,long-term
+12246693,SanctionedSuicide,mh,12246693_3,recovery,11,personal recovery,mdd,long-term
+5177413,amiugly,other,5177413_3,recovery,11,cannot distinguish,ed,long-term
+5507991,AskReddit,other,5507991_2,recovery,12,cannot distinguish,add-other,long-term
+7889777,depression,mh,7889777_2,recovery,17,clinical recovery,mdd,long-term
+7889777,depression,mh,7889777_9,recovery,6,clinical recovery,mdd,long-term
+14322568,BPD,mh,14322568_4,recovery,3,clinical recovery,bpd,long-term
+18721041,confession,other,18721041_0,recovering,1,clinical recovery,add-a,long-term
+19834504,dxm,other,19834504_4,recovery,14,clinical recovery,add-a,long-term
+21003220,JustNoSO,other,21003220_4,recover,12,clinical recovery,bpd,long-term
+4821091,stopdrinking,mh,4821091_0,recovery,4,clinical recovery,add-a,long-term
+7047664,fuckeatingdisorders,mh,7047664_0,recover,16,clinical recovery,ed,long-term
+18868129,minnesotavikings,other,18868129_2,recovery,6,clinical recovery,other,long-term
+11396065,BPD,mh,11396065_22,Recovery,21,clinical recovery,add-a,long-term
+20839464,dryalcoholics,other,20839464_1,Recovery,31,clinical recovery,add-a,long-term
+15727244,CanadianMOMs,other,15727244_22,recovery,8,clinical recovery,add-d,long-term
+5807022,WTF,other,5807022_0,recovery,6,clinical recovery,ed,long-term
+7784506,depression,mh,7784506_0,recovering,28,clinical recovery,mdd,long-term
+13215496,alcoholism,mh,13215496_2,recover,7,clinical recovery,add-a,long-term
+16825359,proED,mh,16825359_3,recovery,7,clinical recovery,ed,long-term
+19084575,BPD,mh,19084575_0,recover,3,clinical recovery,bpd,long-term
+1597929,REDDITORSINRECOVERY,other,1597929_9,recovery,10,clinical recovery,add-other,long-term
+5805172,stopdrinking,mh,5805172_1,recovery,4,clinical recovery,add-a,long-term
+11396065,BPD,mh,11396065_22,Recovery,17,clinical recovery,add-a,long-term
+16488467,confessions,other,16488467_9,recover,22,clinical recovery,add-other,long-term
+2922552,casualiama,other,2922552_12,recovered,22,clinical recovery,add-a,long-term
+7340421,DarkNetMarkets,other,7340421_11,recovered,20,clinical recovery,other,long-term
+7901227,chicago,other,7901227_9,recovering,13,clinical recovery,add-d,long-term
+8150652,bipolar,bd,8150652_0,recovering,0,clinical recovery,add-a,long-term
+11914768,AskReddit,other,11914768_3,recovery,5,clinical recovery,add-d,long-term
+13322861,AskReddit,other,13322861_0,recovering,8,clinical recovery,add-d,long-term
+13912282,askgaybros,other,13912282_5,recovery,3,clinical recovery,add-other,long-term
+14883845,StopSelfHarm,other,14883845_31,recover,27,clinical recovery,other,long-term
+15692900,bipolar,bd,15692900_3,recovery,7,clinical recovery,bd,long-term
+15808293,stopdrinking,mh,15808293_12,recovering,6,clinical recovery,add-d,long-term
+16033467,relationships,other,16033467_13,recovery,19,clinical recovery,add-a,long-term
+19639349,loseit,other,19639349_0,recovery,17,clinical recovery,ed,long-term
+3027871,depression,mh,3027871_4,recovering,4,clinical recovery,add-d,long-term
+4975740,atheism,other,4975740_2,recovery,17,clinical recovery,add-a,long-term
+6530161,stopdrinking,mh,6530161_20,recovery,18,clinical recovery,add-a,long-term
+10176065,stopdrinking,mh,10176065_1,recovering,7,clinical recovery,multiple,long-term
+10751704,kratom,other,10751704_16,recovery,12,clinical recovery,add-d,long-term
+5185603,BPDSOFFA,mh,5185603_10,recovery,8,cannot distinguish,bpd,long-term
+18360170,Methadone,other,18360170_2,recovery,18,personal recovery,add-d,long-term
+16942824,asktransgender,other,16942824_10,recovery,21,personal recovery,other,long-term
+19783766,bipolar,bd,19783766_0,Recovery,1,clinical recovery,bd,long-term
+19783766,bipolar,bd,19783766_13,recovered,7,clinical recovery,bd,long-term
+21100038,bipolar,bd,21100038_4,recovered,6,clinical recovery,add-other,long-term
+5833236,BipolarReddit,bd,5833236_1,recover,19,clinical recovery,bd,long-term
+7303875,BipolarReddit,bd,7303875_22,recovery,17,clinical recovery,bd,long-term
+2287433,BipolarReddit,bd,2287433_2,recover,31,clinical recovery,bd,long-term
+1654292,BipolarReddit,bd,1654292_8,recover,5,personal recovery,multiple,long-term
+4371748,BodyAcceptance,other,4371748_6,recovery,21,personal recovery,ed,other
+2474385,NoFap,other,2474385_1,recovery,4,personal recovery,add-other,other
+8148021,stopdrinking,mh,8148021_0,recovery,24,personal recovery,add-a,other
+16009992,bipolar,bd,16009992_1,Recovery,0,clinical recovery,other,other
+3441829,sex,other,3441829_26,recovery,23,life event,,
+19789711,CPTSD,mh,19789711_8,recover,39,life event,,
+7338709,raisedbynarcissists,mh,7338709_18,recovery,7,life event,,
+6249408,changemyview,other,6249408_1,recovered,4,other,,
+6863649,zerocarb,other,6863649_2,recovery,4,physical health,,
+2701136,Rabbits,other,2701136_10,recovered,2,animal/plant,,
+6998804,AskVet,other,6998804_18,recover,23,animal/plant,,
+17181599,whatsthisplant,other,17181599_8,recover,6,animal/plant,,
+9146847,BeforeNAfterAdoption,other,9146847_1,recovery,3,animal/plant,,
+12623489,legaladvice,other,12623489_4,recovery,20,animal/plant,,
+17241337,tifu,other,17241337_2,recovery,12,animal/plant,,
+2534995,politics,other,2534995_1,recoveries,9,inanimate,,
+8234277,lostgeneration,other,8234277_7,recovering,25,inanimate,,
+14256901,CoinTrading,other,14256901_0,recover,16,inanimate,,
+16176308,PostCollapse,other,16176308_0,recover,48,inanimate,,
+20896075,AskReddit,other,20896075_1,recovering,5,life event,,
+15567403,politics,other,15567403_1,recovered,7,life event,,
+16176308,PostCollapse,other,16176308_5,recovery,1,life event,,
+11511156,BipolarSOs,other,11511156_1,recovery,6,life event,,
+17014932,atheism,other,17014932_11,recovery,13,life event,,
+6938794,AskReddit,other,6938794_5,recovery,16,life event,,
+13829012,movies,other,13829012_38,recover,14,life event,,
+14110512,IAmA,other,14110512_4,recovered,54,life event,,
+21017415,IncelTears,other,21017415_4,Recovery,0,life event,,
+6435814,GirlGamers,other,6435814_24,recover,16,life event,,
+249184,relationship_advice,other,249184_2,recovery,10,life event,,
+8480481,relationships,other,8480481_13,recover,15,life event,,
+19509249,relationships,other,19509249_13,recover,11,life event,,
+13448463,relationships,other,13448463_2,recover,11,life event,,
+13448463,relationships,other,13448463_3,recover,18,life event,,
+19144215,AskReddit,other,19144215_0,recovery,8,other,,
+17796663,AskReddit,other,17796663_2,recovering,3,other,,
+19508142,changemyview,other,19508142_5,recovered,4,other,,
+18511579,politics,other,18511579_19,recovery,24,other,,
+11216675,legaladvice,other,11216675_2,recovery,12,other,,
+18256045,PEDs,other,18256045_2,recovery,1,other,,
+2466751,cars,other,2466751_4,recovery,22,other,,
+3146576,unitedkingdom,other,3146576_0,recovery,9,physical health,,
+7197822,motorcitykitties,other,7197822_0,recovering,4,physical health,,
+10553595,smashbros,other,10553595_3,recovery,19,physical health,,
+5886678,MTB,other,5886678_4,recovering,4,physical health,,
+13599080,TrollXChromosomes,other,13599080_1,recovers,3,physical health,,
+20311983,AskMen,other,20311983_3,recovery,7,physical health,,
+152049,Fitness,other,152049_2,recovery,16,physical health,,
+3953993,AskReddit,other,3953993_3,recovering,28,physical health,,
+4347865,AskReddit,other,4347865_7,recovered,9,physical health,,
+5362413,IAmA,other,5362413_1,recover,18,physical health,,
+5435016,ftm,other,5435016_2,recovering,3,physical health,,
+5564406,running,other,5564406_0,recover,20,physical health,,
+7089497,AMA,other,7089497_2,recover,3,physical health,,
+9254642,AskWomen,other,9254642_1,recovery,29,physical health,,
+10882829,BabyBumps,other,10882829_1,recovery,18,physical health,,
+11511493,AskMen,other,11511493_11,recovering,16,physical health,,
+13276850,AskReddit,other,13276850_6,recovery,25,physical health,,
+13701092,ftm,other,13701092_24,recovering,20,physical health,,
+17615439,ibs,other,17615439_22,recovered,21,physical health,,
+18177032,asktransgender,other,18177032_3,Recovery,0,physical health,,
+19791031,AskReddit,other,19791031_3,recover,24,physical health,,
+19883977,beyondthebump,other,19883977_3,recovering,20,physical health,,
+20405458,AskReddit,other,20405458_0,recovery,5,physical health,,
+20542183,IsItBullshit,other,20542183_3,recovered,22,physical health,,
+20542183,IsItBullshit,other,20542183_5,recovery,8,physical health,,
+3997357,fatlogic,other,3997357_1,recovery,22,physical health,,
+14989541,nursing,other,14989541_4,recovering,33,physical health,,
+21152380,Abortiondebate,other,21152380_2,unrecoverable,12,physical health,,
+15337654,Eminem,other,15337654_0,recovery,3,proper noun,,
+14657339,GenderCritical,other,14657339_4,recover,7,retrieve,,
+7935125,applehelp,other,7935125_7,recovery,17,retrieve,,
+10620161,SWWP,other,10620161_7,recovered,3,retrieve,,
+16128910,gaming,other,16128910_0,recovered,2,retrieve,,
+5283040,archeage,other,5283040_3,recover,11,retrieve,,
+20130238,nfl,other,20130238_0,recovery,9,retrieve,,
+6253723,windows,other,6253723_7,recovery,6,retrieve,,
+6907704,Philippines,other,6907704_1,recovery,4,retrieve,,
+9161773,IAmA,other,9161773_2,unrecoverable,13,retrieve,,
+18577056,CryptoCurrency,other,18577056_0,irrecoverable,13,retrieve,,
+6704351,jailbreak,other,6704351_1,recoverable,15,retrieve,,
+5751988,dogecoin,other,5751988_0,recoverable,6,retrieve,,
+13112230,MensRights,other,13112230_1,irrecoverable,23,retrieve,,
+20429232,saltierthancrait,other,20429232_1,recovering,10,retrieve,,
+10260066,relationships,other,10260066_14,recover,2,retrieve,,
+9326836,smashbros,other,9326836_1,recoveries,4,inanimate,,
+14542132,DestinyTheGame,other,14542132_1,recovery,18,inanimate,,
+768103,sex,other,768103_24,irrecoverable,3,life event,,
+18395015,todayilearned,other,18395015_1,recovers,5,physical health,,
+4597854,BipolarReddit,bd,4597854_0,recover,31,other,,
+4597854,BipolarReddit,bd,4597854_6,recover,4,clinical recovery,other,other
+15254438,bipolar,bd,15254438_1,recovery,9,physical health,,
+9159962,bipolar,bd,9159962_22,recover,10,physical health,,
