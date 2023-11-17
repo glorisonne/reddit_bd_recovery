@@ -1,11 +1,9 @@
 [comment]: https://www.markdownguide.org/basic-syntax/
-# Code accompanying the paper "How people with a bipolar disorder diagnosis talk about personal recovery in peer online support forums: corpus framework analysis using POETIC"
+# Code accompanying the paper "How People With a Bipolar Disorder Diagnosis Talk About Personal Recovery in Peer Online Support Forums: Corpus Framework Analysis Using the POETIC Framework"
 
-This repository contains the code to reproduce all results from the paper Jagfeld, G., Lobban, F., Humphreys, C.,
-Rayson, P. E., & Jones, S. H. (submitted for publication) 
-"How people with a bipolar disorder diagnosis talk about personal recovery in peer online support forums: corpus framework analysis using POETIC".
+This repository contains the code to reproduce all results from the paper [Jagfeld, G., Lobban, F., Humphreys, C., Rayson, P. and Jones, S.H. (2023) ‘How People With a Bipolar Disorder Diagnosis Talk About Personal Recovery in Peer Online Support Forums: Corpus Framework Analysis Using the POETIC Framework’, JMIR Med Inform, 11](https://doi.org/10.2196/46544).
 
-The data ([S-BiDD dataset](https://doi.org/10.17635/lancaster/researchdata/589)) is available for non-commercial reserach purposes upon filling in the [data usage agreement](https://github.com/glorisonne/reddit_bd_mood_posting_mh/blob/02a72b2ae1810503de145f5e77bdff76bb8ab13e/data/DataUsageAgreement_SBiDDDataset.docx).
+The data ([S-BiDD dataset](https://doi.org/10.17635/lancaster/researchdata/589)) is available for non-commercial reserach purposes upon filling in the [data usage agreement](https://github.com/glorisonne/reddit_bd_mood_posting_mh/blob/main/data/DataUsageAgreement_SBiDDDataset.docx).
 To reproduce the results of the main study and exploratory study 2, you require posts_meta.csv and posts_text.csv.
 To reproduce exploratory study 1, you additionally require BD_Subreddit_Corpus.txt.
 
